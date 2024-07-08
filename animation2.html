@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+             margin: 100px auto;
+             text-align: center;
+         }
+         .nnn{
+            width: 35%;
+            height: 70px;;
+            border: 2px solid blue;
+            margin: 50px auto;
+         }
+         .mmm , .mmm2{
+            width: 20%;
+            height: 100%;
+            background-color: blue;
+            animation:aaa 2s infinite;
+
+         }
+         .mmm{
+            animation-timing-function: linear;
+         }
+         
+         @keyframes aaa{
+            0%, 100%{
+                width: 45%;
+
+            }
+            25%{
+                width: 55%;
+
+            }
+            50%{
+                width:65% ;
+
+            }
+            75%{
+                width: 75%;
+
+            }
+         }
+    </style>
+</head>
+<body>
+     <h1>Animated</h1>
+     <div class="nnn">
+        <div class="mmm"></div>
+
+     </div>
+     <h1>Not Animated</h1>
+     <div class="nnn">
+        <div class="mmm2"></div>
+
+</body>
+</html>

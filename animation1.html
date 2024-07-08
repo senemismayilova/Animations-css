@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+     .nmm{
+        width: 500px;
+        height: 500px;
+        margin: 100px auto;
+        background-color: lightgray;
+        box-sizing: border-box ;
+        position: relative;
+    }
+
+    .mmm{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+       animation: sss 3.5s linear infinite;
+
+
+    }
+    
+    @keyframes sss{
+         
+        0%,
+         100%{
+        border-radius: 50%;
+        background-color: rgb(22, 22, 123);
+        top: 50px;
+        left: 50px;
+        }
+
+        25%{
+        border-radius: 0%;
+        background-color: rgb(164, 34, 34);
+        top: 50px;
+        left: 60%;
+
+        }
+
+        50%{
+        border-radius: 50%;
+        background-color: rgb(18, 122, 66);
+        top: 60%;
+        left: 60%;
+
+
+
+        }
+
+        75%{
+        border-radius: 0%;
+        background-color: rgb(232, 75, 40);
+        top: 60%;
+        left: 50px;
+
+        }
+    }
+    
+
+
+    </style>
+</head>
+<body>
+   <div class="nmm">
+    <div class="mmm">
+
+    </div>
+
+   </div>
+    
+</body>
+</html>

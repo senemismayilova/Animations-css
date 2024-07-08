@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+       .CCC{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+       } 
+       h2{
+        cursor: pointer;
+       }
+       h2::before{
+        content: " ";
+        width: 100%;
+        height: 4px;
+        display: block;
+        background-color: black;
+        transition: 1s;
+        transform: translate(0px, 0px);
+        
+        
+       }
+       h2::after{
+
+        content: " ";
+        width: 100%;
+        height: 4px;
+        display: block;
+        background-color: red;
+        transition: 1s;
+        transform: translate(0px, 0px);
+      
+
+}
+       h2:hover::before{
+       transform: translate(0px, 35px);
+
+       }
+
+       h2:hover::after {
+        transform: translate(0px, -35px);
+
+
+       }
+       .cc{
+        border: none;
+        padding: 1rem 2rem;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        margin: 20px 0px;
+        font-size: 20px;
+        position: relative;
+       }
+       .cc::before{
+        content: "  ";
+        position: absolute;
+        border: 4px solid green;
+        z-index: -1;
+        inset: 0;
+       
+        transition: 1s;
+       }
+       .cc:hover::before{
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+       
+       }
+       .ccc{
+        border: none;
+        background-color: orange;
+        padding: 1% 2%;
+        cursor: pointer;
+        position: relative;
+        margin-top: 20px;
+        color: white;
+        font-size: 20px;
+        transition: 1s;
+        z-index: 1;
+
+       }
+       .ccc::before{
+        content: " ";
+        z-index: 1;
+        background-color: blue;
+        inset: 0;
+        transition: 1s;
+        position: absolute;
+        z-index: -1;
+        transform: scale(0);
+        transform-origin: top;
+       }
+
+       .ccc:hover::before{
+        transform: scale(1);
+       }
+       ul{
+        width: 40%;
+        padding: 20px;
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        font-size: 25px;
+        color: white;
+       }
+
+       
+       li::after{
+        content: "  ";
+        display: block;
+        background-color: white;
+        width: 1%;
+        height: 2px;
+        transform: scale(0);
+        transition: 1s;
+        transform-origin: left;
+
+       }
+       li:hover::after{
+        width: 100%;
+        transform: scale(1);
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="CCC">
+        <h2>Before & After</h2>
+        <button class="cc">Before & After</button>
+        <button class="ccc"> Before & After</button>
+        <ul>
+            <li>əsas</li>
+            <li>contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+</body>
+</html>

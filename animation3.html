@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .aaa{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+            font-size: 30px;
+            font-style: italic;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            position: relative;
+
+        }
+        .aaa::before{
+            content: " ";
+            position: absolute;
+            border-radius: 10px;
+            width: 310px;
+            height: 310px;
+            z-index: -1;
+            background-position: 0 0;
+            background: linear-gradient(60deg,
+            rgb(79, 218, 79),
+            rgb(226, 56, 56),
+            rgb(77, 77, 234),
+            rgb(253, 253, 73),
+            rgb(231, 99, 231),
+            rgb(43, 163, 227),
+            rgb(33, 147, 175),
+            rgb(27, 216, 10) );
+            animation: rotate 2s linear infinite;
+            background-size: 300%;
+           
+
+        }
+        @keyframes rotate{
+            0%{
+                background-position:0% 25% ;
+
+            }
+            25%{
+                background-position:25% 50% ;
+
+            }
+            50%{
+                background-position: 50% 100;
+
+            }
+            75%{ 
+                background-position: 100% 50%;
+
+            }
+            100%{
+                background-position: 0% 50%;
+
+            }
+            
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="aaa">Animation</div>
+    
+</body>
+</html>
